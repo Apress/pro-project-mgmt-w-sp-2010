@@ -1,0 +1,317 @@
+﻿<RuleDefinitions xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+	<RuleDefinitions.Conditions>
+		<RuleExpressionCondition Name="notCreated">
+			<RuleExpressionCondition.Expression>
+				<ns0:CodeBinaryOperatorExpression Operator="ValueEquality" xmlns:ns0="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					<ns0:CodeBinaryOperatorExpression.Right>
+						<ns0:CodeFieldReferenceExpression FieldName="Empty">
+							<ns0:CodeFieldReferenceExpression.TargetObject>
+								<ns0:CodeTypeReferenceExpression Type="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+							</ns0:CodeFieldReferenceExpression.TargetObject>
+						</ns0:CodeFieldReferenceExpression>
+					</ns0:CodeBinaryOperatorExpression.Right>
+					<ns0:CodeBinaryOperatorExpression.Left>
+						<ns0:CodeFieldReferenceExpression FieldName="_workTaskId">
+							<ns0:CodeFieldReferenceExpression.TargetObject>
+								<ns0:CodeThisReferenceExpression />
+							</ns0:CodeFieldReferenceExpression.TargetObject>
+						</ns0:CodeFieldReferenceExpression>
+					</ns0:CodeBinaryOperatorExpression.Left>
+				</ns0:CodeBinaryOperatorExpression>
+			</RuleExpressionCondition.Expression>
+		</RuleExpressionCondition>
+		<RuleExpressionCondition Name="Wad">
+			<RuleExpressionCondition.Expression>
+				<ns0:CodeBinaryOperatorExpression Operator="ValueEquality" xmlns:ns0="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					<ns0:CodeBinaryOperatorExpression.Right>
+						<ns0:CodePrimitiveExpression>
+							<ns0:CodePrimitiveExpression.Value>
+								<ns1:String xmlns:ns1="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Working as Designed</ns1:String>
+							</ns0:CodePrimitiveExpression.Value>
+						</ns0:CodePrimitiveExpression>
+					</ns0:CodeBinaryOperatorExpression.Right>
+					<ns0:CodeBinaryOperatorExpression.Left>
+						<ns0:CodeFieldReferenceExpression FieldName="_action">
+							<ns0:CodeFieldReferenceExpression.TargetObject>
+								<ns0:CodeThisReferenceExpression />
+							</ns0:CodeFieldReferenceExpression.TargetObject>
+						</ns0:CodeFieldReferenceExpression>
+					</ns0:CodeBinaryOperatorExpression.Left>
+				</ns0:CodeBinaryOperatorExpression>
+			</RuleExpressionCondition.Expression>
+		</RuleExpressionCondition>
+		<RuleExpressionCondition Name="Assign">
+			<RuleExpressionCondition.Expression>
+				<ns0:CodeBinaryOperatorExpression Operator="BooleanAnd" xmlns:ns0="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					<ns0:CodeBinaryOperatorExpression.Right>
+						<ns0:CodeBinaryOperatorExpression Operator="GreaterThan">
+							<ns0:CodeBinaryOperatorExpression.Right>
+								<ns0:CodePrimitiveExpression>
+									<ns0:CodePrimitiveExpression.Value>
+										<ns1:String xmlns:ns1="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></ns1:String>
+									</ns0:CodePrimitiveExpression.Value>
+								</ns0:CodePrimitiveExpression>
+							</ns0:CodeBinaryOperatorExpression.Right>
+							<ns0:CodeBinaryOperatorExpression.Left>
+								<ns0:CodeFieldReferenceExpression FieldName="_assign">
+									<ns0:CodeFieldReferenceExpression.TargetObject>
+										<ns0:CodeThisReferenceExpression />
+									</ns0:CodeFieldReferenceExpression.TargetObject>
+								</ns0:CodeFieldReferenceExpression>
+							</ns0:CodeBinaryOperatorExpression.Left>
+						</ns0:CodeBinaryOperatorExpression>
+					</ns0:CodeBinaryOperatorExpression.Right>
+					<ns0:CodeBinaryOperatorExpression.Left>
+						<ns0:CodeBinaryOperatorExpression Operator="ValueEquality">
+							<ns0:CodeBinaryOperatorExpression.Right>
+								<ns0:CodePrimitiveExpression>
+									<ns0:CodePrimitiveExpression.Value>
+										<ns1:String xmlns:ns1="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Assign</ns1:String>
+									</ns0:CodePrimitiveExpression.Value>
+								</ns0:CodePrimitiveExpression>
+							</ns0:CodeBinaryOperatorExpression.Right>
+							<ns0:CodeBinaryOperatorExpression.Left>
+								<ns0:CodeFieldReferenceExpression FieldName="_action">
+									<ns0:CodeFieldReferenceExpression.TargetObject>
+										<ns0:CodeThisReferenceExpression />
+									</ns0:CodeFieldReferenceExpression.TargetObject>
+								</ns0:CodeFieldReferenceExpression>
+							</ns0:CodeBinaryOperatorExpression.Left>
+						</ns0:CodeBinaryOperatorExpression>
+					</ns0:CodeBinaryOperatorExpression.Left>
+				</ns0:CodeBinaryOperatorExpression>
+			</RuleExpressionCondition.Expression>
+		</RuleExpressionCondition>
+		<RuleExpressionCondition Name="Assigned">
+			<RuleExpressionCondition.Expression>
+				<ns0:CodeBinaryOperatorExpression Operator="GreaterThan" xmlns:ns0="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					<ns0:CodeBinaryOperatorExpression.Right>
+						<ns0:CodePrimitiveExpression>
+							<ns0:CodePrimitiveExpression.Value>
+								<ns1:String xmlns:ns1="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></ns1:String>
+							</ns0:CodePrimitiveExpression.Value>
+						</ns0:CodePrimitiveExpression>
+					</ns0:CodeBinaryOperatorExpression.Right>
+					<ns0:CodeBinaryOperatorExpression.Left>
+						<ns0:CodeFieldReferenceExpression FieldName="_assign">
+							<ns0:CodeFieldReferenceExpression.TargetObject>
+								<ns0:CodeThisReferenceExpression />
+							</ns0:CodeFieldReferenceExpression.TargetObject>
+						</ns0:CodeFieldReferenceExpression>
+					</ns0:CodeBinaryOperatorExpression.Left>
+				</ns0:CodeBinaryOperatorExpression>
+			</RuleExpressionCondition.Expression>
+		</RuleExpressionCondition>
+		<RuleExpressionCondition Name="Close">
+			<RuleExpressionCondition.Expression>
+				<ns0:CodeBinaryOperatorExpression Operator="ValueEquality" xmlns:ns0="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					<ns0:CodeBinaryOperatorExpression.Right>
+						<ns0:CodePrimitiveExpression>
+							<ns0:CodePrimitiveExpression.Value>
+								<ns1:String xmlns:ns1="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Close</ns1:String>
+							</ns0:CodePrimitiveExpression.Value>
+						</ns0:CodePrimitiveExpression>
+					</ns0:CodeBinaryOperatorExpression.Right>
+					<ns0:CodeBinaryOperatorExpression.Left>
+						<ns0:CodeFieldReferenceExpression FieldName="_action">
+							<ns0:CodeFieldReferenceExpression.TargetObject>
+								<ns0:CodeThisReferenceExpression />
+							</ns0:CodeFieldReferenceExpression.TargetObject>
+						</ns0:CodeFieldReferenceExpression>
+					</ns0:CodeBinaryOperatorExpression.Left>
+				</ns0:CodeBinaryOperatorExpression>
+			</RuleExpressionCondition.Expression>
+		</RuleExpressionCondition>
+		<RuleExpressionCondition Name="Completed">
+			<RuleExpressionCondition.Expression>
+				<ns0:CodeBinaryOperatorExpression Operator="ValueEquality" xmlns:ns0="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					<ns0:CodeBinaryOperatorExpression.Right>
+						<ns0:CodePrimitiveExpression>
+							<ns0:CodePrimitiveExpression.Value>
+								<ns1:String xmlns:ns1="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Completed</ns1:String>
+							</ns0:CodePrimitiveExpression.Value>
+						</ns0:CodePrimitiveExpression>
+					</ns0:CodeBinaryOperatorExpression.Right>
+					<ns0:CodeBinaryOperatorExpression.Left>
+						<ns0:CodeFieldReferenceExpression FieldName="_action">
+							<ns0:CodeFieldReferenceExpression.TargetObject>
+								<ns0:CodeThisReferenceExpression />
+							</ns0:CodeFieldReferenceExpression.TargetObject>
+						</ns0:CodeFieldReferenceExpression>
+					</ns0:CodeBinaryOperatorExpression.Left>
+				</ns0:CodeBinaryOperatorExpression>
+			</RuleExpressionCondition.Expression>
+		</RuleExpressionCondition>
+		<RuleExpressionCondition Name="Enhancement">
+			<RuleExpressionCondition.Expression>
+				<ns0:CodeBinaryOperatorExpression Operator="ValueEquality" xmlns:ns0="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					<ns0:CodeBinaryOperatorExpression.Right>
+						<ns0:CodePrimitiveExpression>
+							<ns0:CodePrimitiveExpression.Value>
+								<ns1:String xmlns:ns1="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Enhancement</ns1:String>
+							</ns0:CodePrimitiveExpression.Value>
+						</ns0:CodePrimitiveExpression>
+					</ns0:CodeBinaryOperatorExpression.Right>
+					<ns0:CodeBinaryOperatorExpression.Left>
+						<ns0:CodeFieldReferenceExpression FieldName="_action">
+							<ns0:CodeFieldReferenceExpression.TargetObject>
+								<ns0:CodeThisReferenceExpression />
+							</ns0:CodeFieldReferenceExpression.TargetObject>
+						</ns0:CodeFieldReferenceExpression>
+					</ns0:CodeBinaryOperatorExpression.Left>
+				</ns0:CodeBinaryOperatorExpression>
+			</RuleExpressionCondition.Expression>
+		</RuleExpressionCondition>
+		<RuleExpressionCondition Name="MoreInfo">
+			<RuleExpressionCondition.Expression>
+				<ns0:CodeBinaryOperatorExpression Operator="ValueEquality" xmlns:ns0="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					<ns0:CodeBinaryOperatorExpression.Right>
+						<ns0:CodePrimitiveExpression>
+							<ns0:CodePrimitiveExpression.Value>
+								<ns1:String xmlns:ns1="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">More Info</ns1:String>
+							</ns0:CodePrimitiveExpression.Value>
+						</ns0:CodePrimitiveExpression>
+					</ns0:CodeBinaryOperatorExpression.Right>
+					<ns0:CodeBinaryOperatorExpression.Left>
+						<ns0:CodeFieldReferenceExpression FieldName="_action">
+							<ns0:CodeFieldReferenceExpression.TargetObject>
+								<ns0:CodeThisReferenceExpression />
+							</ns0:CodeFieldReferenceExpression.TargetObject>
+						</ns0:CodeFieldReferenceExpression>
+					</ns0:CodeBinaryOperatorExpression.Left>
+				</ns0:CodeBinaryOperatorExpression>
+			</RuleExpressionCondition.Expression>
+		</RuleExpressionCondition>
+		<RuleExpressionCondition Name="Pause">
+			<RuleExpressionCondition.Expression>
+				<ns0:CodeBinaryOperatorExpression Operator="ValueEquality" xmlns:ns0="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					<ns0:CodeBinaryOperatorExpression.Right>
+						<ns0:CodePrimitiveExpression>
+							<ns0:CodePrimitiveExpression.Value>
+								<ns1:String xmlns:ns1="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Pause</ns1:String>
+							</ns0:CodePrimitiveExpression.Value>
+						</ns0:CodePrimitiveExpression>
+					</ns0:CodeBinaryOperatorExpression.Right>
+					<ns0:CodeBinaryOperatorExpression.Left>
+						<ns0:CodeFieldReferenceExpression FieldName="_action">
+							<ns0:CodeFieldReferenceExpression.TargetObject>
+								<ns0:CodeThisReferenceExpression />
+							</ns0:CodeFieldReferenceExpression.TargetObject>
+						</ns0:CodeFieldReferenceExpression>
+					</ns0:CodeBinaryOperatorExpression.Left>
+				</ns0:CodeBinaryOperatorExpression>
+			</RuleExpressionCondition.Expression>
+		</RuleExpressionCondition>
+		<RuleExpressionCondition Name="Resolved">
+			<RuleExpressionCondition.Expression>
+				<ns0:CodeBinaryOperatorExpression Operator="ValueEquality" xmlns:ns0="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					<ns0:CodeBinaryOperatorExpression.Right>
+						<ns0:CodePrimitiveExpression>
+							<ns0:CodePrimitiveExpression.Value>
+								<ns1:String xmlns:ns1="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Resolved</ns1:String>
+							</ns0:CodePrimitiveExpression.Value>
+						</ns0:CodePrimitiveExpression>
+					</ns0:CodeBinaryOperatorExpression.Right>
+					<ns0:CodeBinaryOperatorExpression.Left>
+						<ns0:CodeFieldReferenceExpression FieldName="_action">
+							<ns0:CodeFieldReferenceExpression.TargetObject>
+								<ns0:CodeThisReferenceExpression />
+							</ns0:CodeFieldReferenceExpression.TargetObject>
+						</ns0:CodeFieldReferenceExpression>
+					</ns0:CodeBinaryOperatorExpression.Left>
+				</ns0:CodeBinaryOperatorExpression>
+			</RuleExpressionCondition.Expression>
+		</RuleExpressionCondition>
+		<RuleExpressionCondition Name="Resubmit">
+			<RuleExpressionCondition.Expression>
+				<ns0:CodeBinaryOperatorExpression Operator="ValueEquality" xmlns:ns0="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					<ns0:CodeBinaryOperatorExpression.Right>
+						<ns0:CodePrimitiveExpression>
+							<ns0:CodePrimitiveExpression.Value>
+								<ns1:String xmlns:ns1="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Resubmit</ns1:String>
+							</ns0:CodePrimitiveExpression.Value>
+						</ns0:CodePrimitiveExpression>
+					</ns0:CodeBinaryOperatorExpression.Right>
+					<ns0:CodeBinaryOperatorExpression.Left>
+						<ns0:CodeFieldReferenceExpression FieldName="_action">
+							<ns0:CodeFieldReferenceExpression.TargetObject>
+								<ns0:CodeThisReferenceExpression />
+							</ns0:CodeFieldReferenceExpression.TargetObject>
+						</ns0:CodeFieldReferenceExpression>
+					</ns0:CodeBinaryOperatorExpression.Left>
+				</ns0:CodeBinaryOperatorExpression>
+			</RuleExpressionCondition.Expression>
+		</RuleExpressionCondition>
+		<RuleExpressionCondition Name="Start">
+			<RuleExpressionCondition.Expression>
+				<ns0:CodeBinaryOperatorExpression Operator="ValueEquality" xmlns:ns0="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					<ns0:CodeBinaryOperatorExpression.Right>
+						<ns0:CodePrimitiveExpression>
+							<ns0:CodePrimitiveExpression.Value>
+								<ns1:String xmlns:ns1="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Start</ns1:String>
+							</ns0:CodePrimitiveExpression.Value>
+						</ns0:CodePrimitiveExpression>
+					</ns0:CodeBinaryOperatorExpression.Right>
+					<ns0:CodeBinaryOperatorExpression.Left>
+						<ns0:CodeFieldReferenceExpression FieldName="_action">
+							<ns0:CodeFieldReferenceExpression.TargetObject>
+								<ns0:CodeThisReferenceExpression />
+							</ns0:CodeFieldReferenceExpression.TargetObject>
+						</ns0:CodeFieldReferenceExpression>
+					</ns0:CodeBinaryOperatorExpression.Left>
+				</ns0:CodeBinaryOperatorExpression>
+			</RuleExpressionCondition.Expression>
+		</RuleExpressionCondition>
+		<RuleExpressionCondition Name="WorkTask">
+			<RuleExpressionCondition.Expression>
+				<ns0:CodeBinaryOperatorExpression Operator="ValueEquality" xmlns:ns0="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					<ns0:CodeBinaryOperatorExpression.Right>
+						<ns0:CodePrimitiveExpression>
+							<ns0:CodePrimitiveExpression.Value>
+								<ns1:Boolean xmlns:ns1="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">false</ns1:Boolean>
+							</ns0:CodePrimitiveExpression.Value>
+						</ns0:CodePrimitiveExpression>
+					</ns0:CodeBinaryOperatorExpression.Right>
+					<ns0:CodeBinaryOperatorExpression.Left>
+						<ns0:CodeBinaryOperatorExpression Operator="ValueEquality">
+							<ns0:CodeBinaryOperatorExpression.Right>
+								<ns0:CodeFieldReferenceExpression FieldName="Empty">
+									<ns0:CodeFieldReferenceExpression.TargetObject>
+										<ns0:CodeTypeReferenceExpression Type="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+									</ns0:CodeFieldReferenceExpression.TargetObject>
+								</ns0:CodeFieldReferenceExpression>
+							</ns0:CodeBinaryOperatorExpression.Right>
+							<ns0:CodeBinaryOperatorExpression.Left>
+								<ns0:CodeFieldReferenceExpression FieldName="_workTaskId">
+									<ns0:CodeFieldReferenceExpression.TargetObject>
+										<ns0:CodeThisReferenceExpression />
+									</ns0:CodeFieldReferenceExpression.TargetObject>
+								</ns0:CodeFieldReferenceExpression>
+							</ns0:CodeBinaryOperatorExpression.Left>
+						</ns0:CodeBinaryOperatorExpression>
+					</ns0:CodeBinaryOperatorExpression.Left>
+				</ns0:CodeBinaryOperatorExpression>
+			</RuleExpressionCondition.Expression>
+		</RuleExpressionCondition>
+		<RuleExpressionCondition Name="notResolved">
+			<RuleExpressionCondition.Expression>
+				<ns0:CodeBinaryOperatorExpression Operator="ValueEquality" xmlns:ns0="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					<ns0:CodeBinaryOperatorExpression.Right>
+						<ns0:CodePrimitiveExpression>
+							<ns0:CodePrimitiveExpression.Value>
+								<ns1:String xmlns:ns1="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Not Resolved</ns1:String>
+							</ns0:CodePrimitiveExpression.Value>
+						</ns0:CodePrimitiveExpression>
+					</ns0:CodeBinaryOperatorExpression.Right>
+					<ns0:CodeBinaryOperatorExpression.Left>
+						<ns0:CodeFieldReferenceExpression FieldName="_action">
+							<ns0:CodeFieldReferenceExpression.TargetObject>
+								<ns0:CodeThisReferenceExpression />
+							</ns0:CodeFieldReferenceExpression.TargetObject>
+						</ns0:CodeFieldReferenceExpression>
+					</ns0:CodeBinaryOperatorExpression.Left>
+				</ns0:CodeBinaryOperatorExpression>
+			</RuleExpressionCondition.Expression>
+		</RuleExpressionCondition>
+	</RuleDefinitions.Conditions>
+</RuleDefinitions>

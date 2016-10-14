@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SharePointSiteUrl>http://omega5/pm/</SharePointSiteUrl>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{BB1F664B-9266-4fd6-B973-E1E44974B511}">
+        <ProjectStore>
+          <SharePointStartupItem>Workflow1</SharePointStartupItem>
+        </ProjectStore>
+        <ProjectItemStore Id="{cfcb98be-1395-4168-9671-49af7eee7633}">
+          <DisplayName>TestCycle</DisplayName>
+          <HistoryList>Workflow History</HistoryList>
+          <HistoryListGuid>{c73bf169-ab1a-47f5-ac57-7811ea3d7b98}</HistoryListGuid>
+          <TaskList>Tasks</TaskList>
+          <TaskListGuid>{3257116c-87be-46c2-8355-b652ae3e4638}</TaskListGuid>
+          <AutoAssociate>true</AutoAssociate>
+          <ManualStart>true</ManualStart>
+          <ListURL>http://omega5/pm/Lists/Test%20Cycles/AllItems.aspx</ListURL>
+          <TargetList>Test Cycles</TargetList>
+          <TargetListGuid>{0f1c963e-c882-48ee-a39a-304d1dc32f98}</TargetListGuid>
+          <StartOnCreate>false</StartOnCreate>
+          <StartOnChange>false</StartOnChange>
+        </ProjectItemStore>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
